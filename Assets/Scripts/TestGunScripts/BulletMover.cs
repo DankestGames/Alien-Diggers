@@ -4,8 +4,11 @@ using System.Collections;
 public class BulletMover : MonoBehaviour {
 
     public float speed;
-	// Use this for initialization
-	void Start () {
+
+    public string enemyTag = "Enemy";
+
+    // Use this for initialization
+    void Start () {
         Vector2 target = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
         Vector2 myPos = new Vector2(transform.position.x, transform.position.y);
         Vector2 direction = target - myPos;
@@ -14,8 +17,16 @@ public class BulletMover : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        Destroy(gameObject, 1); //надо посмотреть, через что считать время можно
+    void Update() {
+
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.CompareTag(enemyTag))
+        {
+            Destroy(other.gameObject);
+        }
+
+        Destroy(gameObject);
     }
 }
