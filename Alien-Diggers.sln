@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alien-Diggers", "Alien-Diggers.csproj", "{D1947021-90EC-3BD1-A705-4C04166A2295}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alien-Diggers.Editor", "Alien-Diggers.Editor.csproj", "{7490AE88-E46E-5B02-644C-F28E5A6E8BAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{D1947021-90EC-3BD1-A705-4C04166A2295}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1947021-90EC-3BD1-A705-4C04166A2295}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1947021-90EC-3BD1-A705-4C04166A2295}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7490AE88-E46E-5B02-644C-F28E5A6E8BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7490AE88-E46E-5B02-644C-F28E5A6E8BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7490AE88-E46E-5B02-644C-F28E5A6E8BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7490AE88-E46E-5B02-644C-F28E5A6E8BAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
