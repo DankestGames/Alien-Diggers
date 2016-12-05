@@ -61,11 +61,25 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FollowPath.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\EnemyBehavior.cs" />
+    <Compile Include="Assets\Scripts\RotateTowardsCursos.cs" />
     <Compile Include="Assets\Scripts\TestGunScripts\BulletMover.cs" />
     <Compile Include="Assets\Scripts\TestGunScripts\ShootScript.cs" />
+    <Compile Include="Assets\WaypointPro\Sample\Script\MouseClickDemo.cs" />
+    <Compile Include="Assets\WaypointPro\Sample\Script\PlayerDemo.cs" />
+    <Compile Include="Assets\WaypointPro\Script\Cooltimer.cs" />
+    <Compile Include="Assets\WaypointPro\Script\PathData.cs" />
+    <Compile Include="Assets\WaypointPro\Script\PathFollower.cs" />
+    <Compile Include="Assets\WaypointPro\Script\WaypointManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
