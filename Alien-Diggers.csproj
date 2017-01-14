@@ -70,6 +70,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FollowPath.cs" />
+    <Compile Include="Assets\Scripts\DamageTypeEnum.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\EnemyBehavior.cs" />
     <Compile Include="Assets\Scripts\RotateTowardsCursos.cs" />
     <Compile Include="Assets\Scripts\TestGunScripts\BulletMover.cs" />
