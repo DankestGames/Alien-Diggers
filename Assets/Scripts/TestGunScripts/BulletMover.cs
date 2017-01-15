@@ -4,7 +4,8 @@ using System.Collections;
 public class BulletMover : MonoBehaviour {
 
     public float speed;
-
+    public float damage;
+    public DamageTypeEnum damageType = DamageTypeEnum.physical;
     public string enemyTag = "Enemy";
 
     // Use this for initialization
@@ -24,7 +25,7 @@ public class BulletMover : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag(enemyTag))
         {
-            Destroy(other.gameObject);
+            other.gameObject.GetComponent<EnemyBehavior>().TakeDamage(damageType, damage);
         }
 
         Destroy(gameObject);
