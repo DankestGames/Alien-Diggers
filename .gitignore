@@ -1,2 +1,6 @@
 Temp/
-Library/shadercompiler-UnityShaderCompiler.exe0.log
+Library/
+Demo.apk
+Demo.exe
+Demo_Data/
+*.suo
