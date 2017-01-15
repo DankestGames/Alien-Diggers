@@ -3,3 +3,4 @@ Library/
 Demo.apk
 Demo.exe
 Demo_Data/
+*.suo
