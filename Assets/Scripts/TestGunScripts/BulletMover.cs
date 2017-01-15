@@ -10,11 +10,8 @@ public class BulletMover : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Vector2 target = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
-        Vector2 myPos = new Vector2(transform.position.x, transform.position.y);
-        Vector2 direction = target - myPos;
-        direction.Normalize();
-        GetComponent<Rigidbody2D>().velocity = direction * speed;
+        // We setting the forward direction for the bullet
+        GetComponent<Rigidbody2D>().velocity = transform.TransformDirection(new Vector2(speed, 0));
     }
 
     // Update is called once per frame
