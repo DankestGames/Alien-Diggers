@@ -63,11 +63,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FollowPath.cs" />
     <Compile Include="Assets\Scripts\DamageTypeEnum.cs" />
     <Compile Include="Assets\Scripts\EnemyScripts\EnemyBehavior.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
-    <Compile Include="Assets\Scripts\RotateTowardsCursos.cs" />
+    <Compile Include="Assets\Scripts\RotateTowardsCursor.cs" />
+    <Compile Include="Assets\Scripts\SpawnBehavior.cs" />
     <Compile Include="Assets\Scripts\TestGunScripts\BulletMover.cs" />
     <Compile Include="Assets\Scripts\TestGunScripts\ShootScript.cs" />
     <Compile Include="Assets\WaypointPro\Sample\Script\MouseClickDemo.cs" />
