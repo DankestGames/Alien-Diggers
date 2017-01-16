@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RotateTowardsCursos : MonoBehaviour {
+public class RotateTowardsCursor : MonoBehaviour
+{
 
     public float rotationSpeed = 60f;
 
     // Use this for initialization
-    void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         Quaternion targetRotation = Quaternion.LookRotation(Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position, Vector3.forward);
         targetRotation.x = 0;
         targetRotation.y = 0;
